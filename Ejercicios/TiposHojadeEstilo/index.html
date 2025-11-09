@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de hoja de estilos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        pre{
+            color: darkblue;
+        }
+        aside{
+            text-align: center;
+            /*He quitado el display-flex para que text-align:center haga efecto, si dejo display flex el texto no se alinea en el centro*/
+            background-color: darkcyan;
+        }
+        nav{
+            text-align: center;
+            display: grid;
+            color: whitesmoke;
+        }
+        table{
+            color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        form{
+            color: yellowgreen;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer{
+            color: whitesmoke;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body style="background-color: turquoise; color: yellowgreen;">
+    <h1>Ejercicio1</h1>
+    <p style="color: white;">1. <a href="">Años 80</a></p>
+    <p style="color: white;">2. <a href="">Años 90</a></p>
+    <p style="color: white;">3. <a href="">Años 2000</a></p>
+    <p style="color: white;">4. <a href="">Actual</a></p>
+    <aside><a style="padding-right: 80px;" href="https://www.nintendo.com/es-es/?srsltid=AfmBOorecxBsp1nL2sTSenDxobNqQJU-n03y9cxCsPsqfHNU2RSxg1Bp">Nintendo</a>
+    <a style="padding-right: 80px;" href="https://www.sega.com/es">Sega</a>
+    <a href="https://direct.playstation.com/es-es/hardware/ps5?emcid=pa-co-521107&gclsrc=aw.ds&gad_source=1&gad_campaignid=14790204609&gbraid=0AAAAADtLsqx5nXuYQfDNhjo2jRJTy-iZq&gclid=CjwKCAiAlMHIBhAcEiwAZhZBUgrPeNsBPOwepKAXqC8kV6twyHwq3EP6IovkO513ITYOT6BgtAq0KhoC6zIQAvD_BwE">Sony PlayStation</a>
+    </aside>
+    <h2>El Amstrad CPC</h2>
+    <pre>
+          Amstrad CPC (acrónimo del inglés Colour Personal Computer)
+        fue una serie de ordenadores personales de 8 bits producidos por
+        Amstrad durante la década de 1980 y a principios de la década de 1990.
+
+          Las siglas CPC anunciaban un ordenador personal en color,
+        aunque era posible comprar un CPC tanto con pantalla de fósforo verde
+        (GT65/66) como con pantalla estándar en color (CTM640/644),
+        además de poderse adquirir por separado un accesorio modulador (MP-1/MP-2)
+        para conectarlo a un televisor convencional.
+    </pre>
+    <h2>Mi primer ordenador</h2>
+    <p>Mi primer ordenador personal fue un <strong>Amstrad CPC 464</strong> de fósforo verde. Me lo trajeron los Reyes Magos en el año 1986 con los juegos de Ramses y Batman.</p>
+    <h2>Ingresa tu videojuego favorito</h2>
+    <input type="text" placeholder="Ingresa Título"><br>
+    <input type="text" placeholder="Ingresa Compañía"><br>
+    <input type="text" placeholder="Ingresa Año"><br>
+    <input type="text" placeholder="Ingresa Género">(Aventuras, RPG, Deportivos, Acción)<br>
+    <button>Agregar</button>
+    <h3 style="color: white;">Titulo Autor Año Genero</h3><br><br>
+    <!--He quitado display-flex en address y en time, debido a que si lo dejo, el text-align: center no hace efecto y el texto se queda a la izquierda en vez de centrado-->
+    <footer><address style="text-align: center;">Juan Manuel Medina juan.medina@iesgrancapitan.org</address>
+    <time datetime="17-11-2023" style="display: block; text-align: center;">Publicado el 17/11/2023</time></footer>
+</body>
+</html>

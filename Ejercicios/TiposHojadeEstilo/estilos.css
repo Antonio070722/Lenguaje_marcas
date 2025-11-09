@@ -1,0 +1,22 @@
+body{
+    color: darkturquoise;
+}
+h1{
+    color: blue;
+    background-color: orangered;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20%;
+    font-size: 50px;
+}
+h2{
+    color: turquoise;
+    background-color: orangered;
+    text-align: center;
+}
+p{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
