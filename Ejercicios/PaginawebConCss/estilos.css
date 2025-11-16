@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(169, 213, 232);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+.FotoNombreConta{
+    margin: 20px;
+    /*Div del nombre y la foto*/
+    background-color: white;
+    /*display: flex;*/
+    align-items: center;
+    gap: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    width: 480px;
+}
+.Nombre{
+    margin-left: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 50px;
+}
+.Foto{
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contenido_contacto{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+hr{
+    height: 5px;
+    background-color: black;
+    margin: 30px ;
+}
+.PerfilExperienciaIdiomas{
+    
+    flex: 1;
+    width: auto;
+    margin: 20px;
+    background-color: white;
+    align-items: center;
+    gap: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+.contenidoPerfil{
+    margin: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-indent: 2em;
+}
+@media (max-width: 600px) {
+  .contenedor {
+    flex-direction: column;   /* Cambia de fila a columna */
+  }
+
+  .izquierda, .derecha {
+    width: 100%;              /* Ocupan todo el ancho */
+  }
+}
