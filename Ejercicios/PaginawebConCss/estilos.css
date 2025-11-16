@@ -1,62 +1,120 @@
-body{
-    background-color: rgb(169, 213, 232);
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
+body {
+  background-color: rgb(169, 213, 232);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.FotoNombreConta{
-    margin: 20px;
+
+.FotoNombreConta {
+    margin: 40px;
     /*Div del nombre y la foto*/
     background-color: white;
-    /*display: flex;*/
     align-items: center;
     gap: 10px;
-    display: inline-block;
     border-radius: 20px;
-    width: 480px;
+    /*width: 480px;*/
+    flex: 0 0 480px;
+    max-width: 100%;   /* Se adapta en pantallas pequeñas */
+    display: block;    /* Quitar inline-block */
 }
-.Nombre{
+
+.Nombre {
     margin-left: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+                 'Lucida Sans', Arial, sans-serif;
     margin-right: 50px;
+    text-align: center;
 }
-.Foto{
-    margin-left: 130px;
-    margin-right: 130px;
+
+.Foto {
+    /*margin-left: 130px;
+    margin-right: 130px;*/
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
+    max-width: 100%;
+    display: block;       /* Convierte la imagen en bloque */
+    margin: 0 auto;
+    
 }
-.contenido_contacto{
+
+.contenido_contacto {
     margin-left: 50px;
     margin-right: 50px;
 }
-hr{
+
+hr {
     height: 5px;
     background-color: black;
-    margin: 30px ;
+    margin: 30px;
 }
-.PerfilExperienciaIdiomas{
-    
+.hr_Perfil{
+    height: 1px;
+}
+
+.PerfilExperienciaIdiomas {
     flex: 1;
     width: auto;
     margin: 20px;
     background-color: white;
     align-items: center;
     gap: 10px;
-    display: inline-block;
     border-radius: 20px;
+    max-width: 100%;   /* Se adapta en pantallas pequeñas */
+    display: block;    /* Quitar inline-block */
 }
-.contenidoPerfil{
+
+.contenidoPerfil {
     margin: 50px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     text-indent: 2em;
 }
-@media (max-width: 600px) {
-  .contenedor {
-    flex-direction: column;   /* Cambia de fila a columna */
+
+/* 📱 En pantallas pequeñas */
+@media (max-width: 768px) {
+      .contenedor {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .izquierda, .derecha {
-    width: 100%;              /* Ocupan todo el ancho */
-  }
+    .FotoNombreConta, .PerfilExperienciaIdiomas {
+        width: 100%;              /* Ocupan todo el ancho */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contenidoPerfil {
+        margin-left: 20px !important; /* Reduce márgenes en móvil */
+        margin-right: 20px !important;
+    }
+}
+
+/* Ajuste para imágenes */
+.Foto img {
+    max-width: 100%;
+    height: auto;
+}
+header {
+  width: 97,5%;
+  background-color: #2c3e50; /* Fondo oscuro */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+header a{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
