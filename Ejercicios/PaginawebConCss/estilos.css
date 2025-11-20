@@ -15,7 +15,7 @@ body {
     /*width: 480px;*/
     flex: 0 0 480px;
     max-width: 100%;   /* Se adapta en pantallas pequeñas */
-    display: block;    /* Quitar inline-block */
+    display: block;
 }
 
 .Nombre {
@@ -90,14 +90,14 @@ hr {
     }
 }
 
-/* Ajuste para imágenes */
+
 .Foto img {
     max-width: 100%;
     height: auto;
 }
 header {
   width: 97,5%;
-  background-color: #2c3e50; /* Fondo oscuro */
+  background-color: #2c3e50;
   color: white;
   padding: 20px;
   text-align: center;
