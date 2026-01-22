@@ -13,9 +13,9 @@ function validar() {
     const expresRegNombre = /^[A-Z][A-Za-záéíóúñ\s]*$/;
     
     /**
-     * Expresión regular para validar el apellidos:
-     * ^ = comienza desde el inicio de la cadena
-     * [A-Z] = la primera letra debe ser mayúscula
+     * Expresión regular para validar el apellidos, similar a la del nombre:
+     * ^ = al igual que antes, sirve para determinar el comienzo de la cadena
+     * [A-Z] = como antes, la primera letra debe ser mayúscula
      * [A-Za-záéíóúñ\s]* = puede haber letras mayúsculas, minúsculas, con tildes, ñ, espacios, 0 o más veces
      * $ = termina aquí
      */
@@ -23,7 +23,7 @@ function validar() {
     
     /**
      * Expresión regular para validar email:
-     * ^ = comienza desde el inicio
+     * ^ = para determinar el comienzo de la cadena
      * [a-z0-9]+ = se permiten letras minúsculas y números antes del @, 1 o más veces
      * @ = arroba
      * (gmail|outlook|yahoo|cloud) = uno de estos dominios
@@ -34,7 +34,7 @@ function validar() {
     const expresRegEmail = /^[a-z0-9]+@(gmail|outlook|yahoo|cloud)\.(es|com|org)$/;
 
 
-    
+
 
     if (!expresRegNombre.test(nombre) || nombre === '') {
         alert('Nombre inválido o campo vacío. Formato: Primera letra mayúscula. \nFormulario no enviado.');
