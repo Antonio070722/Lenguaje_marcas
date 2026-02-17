@@ -1,0 +1,18 @@
+<?xml version="1.0">
+
+<estudiantes>
+  <estudiante>
+    <nombre>Ana</nombre>
+    <edad>20</edad>
+    <curso>2º DAM</curso>
+  </estudiante>
+  <estudiante>
+    <nombre>Juan</nombre>
+    <edad>22</edad>
+    <curso>2º DAM</curso>
+  </estudiante>
+</estudiantes>
+
+<!--Para ejecutar las consultas he tenido que instalar la extensión
+XML tools y en los comandos XML Tools: Evaluate XPath y aquí escribiendo
+la consulta,-->
