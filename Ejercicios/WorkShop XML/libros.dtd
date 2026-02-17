@@ -1,0 +1,19 @@
+<!--Ejercicio2-->
+<!--Que pueda haber mas de un elemento libro:-->
+<!ELEMENT libros (libro+)>
+
+<!--El orden de los elementos en libro-->
+<!ELEMENT libro (titulo, autor, año, precio)>
+
+<!--Ejercicio3-->
+<!--Cada libro tiene que tener un atributo isbn-->
+<!ATTLIST libro
+    isbn CDATA #REQUIRED
+>
+
+
+<!--Que sea texto el contenido de cada elemento-->
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>

@@ -1,11 +1,16 @@
 function cambiarNombre() {
-    const input = document.querySelector('#nombre-input')
-    const nombre = document.querySelector('#nombre')
+  const nuevoNombre = document.getElementById("nombreInput").value;
 
-    const nuevoNombre = input.value
-    nombre.textContent = nuevoNombre
+  document.getElementById("titulo").textContent = nuevoNombre;
 }
+
 
 function cambiarFondo(){
-    
-}
+  // Generar un color aleatorio en formato RGB
+  const r = Math.floor(Math.random() * 256); // rojo (0-255)
+  const g = Math.floor(Math.random() * 256); // verde (0-255)
+  const b = Math.floor(Math.random() * 256); // azul (0-255)
+
+  // Aplicar el color al fondo
+  document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+} 

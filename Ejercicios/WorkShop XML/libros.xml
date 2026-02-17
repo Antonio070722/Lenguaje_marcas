@@ -1,0 +1,25 @@
+<?xml version="1.0">
+<!DOCTYPE libros SYSTEM "libros.dtd">
+<!--Ejercicio1-->
+<libros>
+<!--Ejercicio 3: añadidos los isbn, en el dtd he puesto que sea obligatorio,-->
+    <libro isbn="0000">
+        <titulo>El Quijote</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <año>1605</año>
+        <precio>19.99</precio>
+    </libro>
+    <libro isbn="0000">
+        <titulo>La celestina</titulo>
+        <autor>Fernando de Rojas</autor>
+        <año>1499</año>
+        <precio>14.99</precio>
+    </libro>
+    <libro isbn="0000">
+        <titulo>Don Juan Tenorio</titulo>
+        <autor>José Zorrilla</autor>
+        <año>1844</año>
+        <precio>9.99</precio>
+    </libro>
+</libros>
+    

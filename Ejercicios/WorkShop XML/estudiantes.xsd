@@ -1,0 +1,26 @@
+<?xml version="1.0">
+<!--Enlace obligario del esquema xsd,-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--El elmento raiz,-->
+    <xs:element name="estudiantes">
+        <xs:complexType>
+            <xs:sequence>
+                <!--Cada estudiante, puede haber varios, por eso el maxOccurs="unbounded"-->
+                <xs:element name="estudiante" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!--El nombre es texto,-->
+                            <xs:element name="nombre" type="xs:string"/>
+                            <!--La edad es un numero entero,-->
+                            <xs:element name="edad" type="xs:integer"/>
+                            <!--El curso es texto,-->
+                            <xs:element name="curso" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

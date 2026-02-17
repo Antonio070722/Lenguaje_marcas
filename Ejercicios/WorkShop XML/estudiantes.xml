@@ -1,0 +1,22 @@
+<?xml version="1.0">
+<!DOCTYPE estudiantes SYSTEM "estudiantes.xsd">
+<!--Ejercicio 4:creados los estudiantes,-->
+<estudiantes>
+    <estudiante>
+        <nombre>Ana López</nombre>
+        <edad>20</edad>
+        <curso>1º DAM</curso>
+    </estudiante>
+
+    <estudiante>
+        <nombre>Carlos Pérez</nombre>
+        <edad>22</edad>
+        <curso>2º ASIR</curso>
+    </estudiante>
+
+    <estudiante>
+        <nombre>María Gómez</nombre>
+        <edad>19</edad>
+        <curso>1º DAW</curso>
+    </estudiante>
+</estudiantes>

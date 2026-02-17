@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Web con CSS</title>
     <link rel="stylesheet" href="estilos.css">
-    <script src ></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header>
-  <h1>CURRICULUM HTML Y CSS</h1>
+  <h1 >CURRICULUM HTML Y CSS</h1>
   <nav>
     <a href="https://www.resufit.com/es/blog/estructura-de-curriculum-html-guia-completa-para-crear-un-cv-web-profesional/" target="_blank">GUÍA CV CON HTML Y CSS</a>
     <a href="proyectos.html" style="padding-left: 30px;" target="_blank">PROYECTOS</a>
   </nav>
 </header>
 
-    <div class="FotoNombreConta"><br><br><img src="img/Foto_CV.png" alt="Foto del curricuclum" width="200" class="Foto"><h1 class="Nombre">Antonio Llorente Palomo</h1>
+    <div class="FotoNombreConta"><br><br><img src="img/Foto_CV.png" alt="Foto del curricuclum" width="200" class="Foto">
+        <h1 id="titulo" class="Nombre">Antonio Llorente Palomo</h1>
         
-        <div id="cambiar-nombre">
-        <label for="nombre-input">Nombre: </label>
-        <input type="text" name="nombre-input" id="nombre-input">
-        <button onclick="cambiarNombre()">Cambiar nombre</button>
+        <div id="cambiar-nombre" style="font-family: 'Times New Roman', Times, serif; text-align: center;">
+            <label for="nombre-input">Nombre: </label>
+            <input type="text" id="nombreInput" placeholder="Escribe tu nombre">
+            <button onclick="cambiarNombre()">Cambiar nombre</button>
+        </div>
+
+        <div id="cambiar-fondo" style="font-family: 'Times New Roman', Times, serif; text-align: center;">
+            <br><button onclick="cambiarFondo()">Botón para cambiar el fondo</button>
         </div>
 
 
@@ -79,7 +84,6 @@
 </div>
 </main>
 
-<script src="script.js"></script>
 
 </body>
 <!--    <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer"><h2>Enlace</h2></a>
