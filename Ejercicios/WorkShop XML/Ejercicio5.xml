@@ -15,4 +15,32 @@
 
 <!--Para ejecutar las consultas he tenido que instalar la extensión
 XML tools y en los comandos XML Tools: Evaluate XPath y aquí escribiendo
-la consulta,-->
+la consulta,
+a. Obtener todos los nombres: 
+Una vez descargada he presionado, ctrl+shift+p y he escrito XPath y a XML Tools: Evaluate XPath, una vez hecho esto,
+he escrito lo siguiente: /estudiantes/estudiante/nombre, despues de la primera / va el nombre del nodo raíz,
+después entra en cada estudiante y después nombre,al ejecutar me devuelve lo siguiente: 
+
+[Line 5] nombre: Ana
+[Line 10] nombre: Juan
+
+b. Obtener la edad de los estudiantes: 
+Al igual que antes, he presionado ctrl+shift+p, escribo XML Tools: Evaluate XPath y dentro he puesto la siguiente 
+consulta: /estudiantes/estudiante/edad  aquí en la primera barra al nodo raíz, la segunda barra que entre en todos
+los estudiantes y en la sigiuente barra a que acceda a la edad de cada estudiante, una vez ejecutada me devuelve esto:
+
+[Line 6] edad: 20
+[Line 11] edad: 22
+
+c. Nombres de estudiantes del curso “2º DAM” 
+Igual, ctrl+shift+p, escribo XML Tools: Evaluate XPath y dentro la siguiente consulta: /estudiantes/estudiante[curso="2º DAM"]/nombre
+La primera barra es el nodo raiz, la segunda que acceda a todos los estudiantes, curso="2º DAM" dentro de [] significa que acceda a los
+estudiantes en los que curso sea igual a 2º DAM y la última /, que muestre el nombre de los que cumplan esta condición, la salida de la consulta es esta:
+
+[Line 5] nombre: Ana
+[Line 10] nombre: Juan
+
+Me devuelve ambos nombre porque los dos están en 2º DAM.
+
+-->
+
