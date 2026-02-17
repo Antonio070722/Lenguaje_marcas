@@ -16,6 +16,7 @@
 <!--Para ejecutar las consultas he tenido que instalar la extensión
 XML tools y en los comandos XML Tools: Evaluate XPath y aquí escribiendo
 la consulta,
+
 a. Obtener todos los nombres: 
 Una vez descargada he presionado, ctrl+shift+p y he escrito XPath y a XML Tools: Evaluate XPath, una vez hecho esto,
 he escrito lo siguiente: /estudiantes/estudiante/nombre, despues de la primera / va el nombre del nodo raíz,
